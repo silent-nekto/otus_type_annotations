@@ -7,6 +7,6 @@ from typing import Protocol
 
 
 class SupportsQuack(Protocol):
-    def quack():
+    def quack(self):
         pass
 

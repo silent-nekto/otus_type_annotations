@@ -1,0 +1,20 @@
+[project]
+name = "type-annotations"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Sergei Maslov",email = "s.maslov@bi.zone"}
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "mypy (>=1.15.0,<2.0.0)",
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+disable_error_code=["empty-body"]
