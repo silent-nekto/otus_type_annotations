@@ -1,16 +1,13 @@
-[project]
+[tool.poetry]
 name = "type-annotations"
 version = "0.1.0"
 description = ""
-authors = [
-    {name = "Sergei Maslov",email = "s.maslov@bi.zone"}
-]
-requires-python = ">=3.9"
-dependencies = [
-    "mypy (>=1.15.0,<2.0.0)",
-]
+authors = ["Sergei Maslov <s.maslov@bi.zone>"]
 package-mode = false
 
+[tool.poetry.dependencies]
+python = "^3.9"
+mypy = "^1.15.0"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
